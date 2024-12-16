@@ -9,6 +9,7 @@ import { RxCross1 } from "react-icons/rx";
 import SearchCard from "@/components/utilities/SearchCard";
 import YourCart from "./yourCart/YourCart";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
+import NavForMobile from "../navbar/NavForMobile";
 
 const Header = () => {
   const [searchCardShow, setSearchCardShow] = useState(false);
@@ -63,7 +64,7 @@ const Header = () => {
             >
               <HiOutlineBars3CenterLeft />
             </span>
-            {/* <NavForMobile setOpen={setOpen} open={open} /> */}
+            <NavForMobile setOpen={setOpen} open={open} />
           </div>
           <div className="flex gap-[190px] lg:gap-[200px] xl:gap-[300px] 2xl:gap-[500px] items-center">
             <Link href="#" className="overflow-hidden">
