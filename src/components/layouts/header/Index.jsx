@@ -8,6 +8,7 @@ import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
 import SearchCard from "@/components/utilities/SearchCard";
 import YourCart from "./yourCart/YourCart";
+import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 
 const Header = () => {
   const [searchCardShow, setSearchCardShow] = useState(false);
@@ -55,6 +56,15 @@ const Header = () => {
     <header className="border-b border-[#4b4d4e]">
       <div className="w-full lg:container relative mx-auto py-3">
         <div className="flex justify-between items-center px-4">
+          <div className="lg:hidden">
+            <span
+              className="text-3xl cursor-pointer"
+              onClick={() => setOpen(!open)}
+            >
+              <HiOutlineBars3CenterLeft />
+            </span>
+            {/* <NavForMobile setOpen={setOpen} open={open} /> */}
+          </div>
           <div className="flex gap-[190px] lg:gap-[200px] xl:gap-[300px] 2xl:gap-[500px] items-center">
             <Link href="#" className="overflow-hidden">
               <Image
