@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
 import SearchCard from "@/components/utilities/SearchCard";
+import YourCart from "./yourCart/YourCart";
 
 const Header = () => {
   const [searchCardShow, setSearchCardShow] = useState(false);
@@ -137,6 +138,14 @@ const Header = () => {
             </div>
           )}
         </div>
+        {yourCart && (
+          <div
+            ref={cartBodyRef}
+            className="absolute top-[130%] right-0 z-20 w-full sm:w-4/5 md:w-3/5 xl:w-2/5"
+          >
+            <YourCart setYourCart={setYourCart} />
+          </div>
+        )}
       </div>
     </header>
   );
