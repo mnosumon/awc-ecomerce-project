@@ -1,4 +1,4 @@
-import Header from "../components/layouts/headers/Index";
+import Header from "../components/layouts/header/Index";
 export default function Home() {
   return (
     <main>

@@ -6,6 +6,7 @@ import { BsCart3 } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
+import SearchCard from "@/components/utilities/SearchCard";
 
 const Header = () => {
   const [searchCardShow, setSearchCardShow] = useState(false);
@@ -108,7 +109,7 @@ const Header = () => {
             value={inputValue}
             type="text"
             placeholder="Search:"
-            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 shadow-sm transition-all"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 shadow-sm transition-all"
           />
           <div className="absolute  right-7 lg:right-[6%]  top-1/2 -translate-y-1/2 flex gap-3 items-center">
             {inputValue && (
@@ -123,6 +124,18 @@ const Header = () => {
               <IoSearchOutline />
             </div>
           </div>
+          {searchCardShow && (
+            <div
+              ref={cardRef}
+              className="absolute top-full right-0 z-10 bg-white w-full"
+            >
+              <SearchCard
+                setInputValue={setInputValue}
+                inputValue={inputValue}
+                setSearchCardShow={setSearchCardShow}
+              />
+            </div>
+          )}
         </div>
       </div>
     </header>
