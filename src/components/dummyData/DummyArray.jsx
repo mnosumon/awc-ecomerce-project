@@ -1,8 +1,18 @@
-import { IoIosArrowForward, IoIosHeartEmpty } from "react-icons/io";
+import {
+  IoIosArrowDown,
+  IoIosArrowForward,
+  IoIosHeartEmpty,
+} from "react-icons/io";
 import { CgProductHunt } from "react-icons/cg";
 import { IoBatteryDeadOutline } from "react-icons/io5";
+import { IoIosArrowUp } from "react-icons/io";
+import General from "../../../public/bybenefitIocn/general.svg";
+import MensHelth from "../../../public/bybenefitIocn/mens-health.svg";
+import CapsuleIicon01 from "../../../public/get-started-page-img/capsule-icon-1.webp";
+import GroupPage from "../../../public/get-started-page-img/GroupPage.webp";
+import BundlesBanner from "../../../public/bundlesBanner/bundlesBanner.webp";
 
-export const productFilterMenu = [
+export const ProductFilterMenuArray = [
   { id: "01", title: "The Daily 4" },
   { id: "02", title: "New" },
   { id: "03", title: "Best Sellers" },
@@ -10,14 +20,14 @@ export const productFilterMenu = [
   { id: "05", title: "Wellblends" },
 ];
 
-export const menuItems = [
+export const MenuItemsArray = [
   { label: "Products", category: "products" },
   { label: "Find vitamins for me", category: "findVitamins" },
   { label: "Tips & Resources", category: "tipsResources" },
   { label: "About", category: "about" },
 ];
 
-export const products = [
+export const ProductsArray = [
   // wellblends wellblends wellblends wellblends
   {
     id: 1,
@@ -258,7 +268,7 @@ export const products = [
   },
 ];
 
-export const adverties = [
+export const AdvertiesArray = [
   {
     id: 1,
     heading: "What Vitamins Should I Take?",
@@ -311,7 +321,7 @@ export const adverties = [
   },
 ];
 
-export const companiesLogoAndService = [
+export const CompaniesLogoAndServiceArray = [
   {
     id: 1,
     logo: "/companies-logo/partnership-cplmpanies-logo01.webp",
@@ -348,7 +358,7 @@ export const companiesLogoAndService = [
     serviceBtn: "our exparties",
   },
 ];
-export const backedByScience = [
+export const BackedByScienceArray = [
   {
     id: 1,
     image: "/BackedByScience/BackedByScience01.webp",
@@ -374,7 +384,7 @@ export const backedByScience = [
     cetagory: "multivitamins",
   },
 ];
-export const searchInputValue = [
+export const SearchInputValueArray = [
   {
     id: 1,
     title: "Start a Regimen",
@@ -412,7 +422,7 @@ export const searchInputValue = [
     title: "Best Sellers",
   },
 ];
-export const productItemcetagory = [
+export const ProductItemcetagoryArray = [
   {
     id: 1,
     title: "a - z",
@@ -454,7 +464,7 @@ export const productItemcetagory = [
     forwardAwwos: false,
   },
 ];
-export const byBenefitArr = [
+export const ByBenefitArray = [
   {
     id: 1,
     title: " Beauty ",
@@ -539,5 +549,346 @@ export const byBenefitArr = [
     id: 16,
     title: " Heart ",
     byBenifitIcon: "/bybenefitIocn/heart.svg",
+  },
+];
+export const GetStartedBannerArray = [
+  {
+    id: 1,
+    subHeading: "Your journey begins here",
+    heading: "What Do I Need?",
+    paragraph: "Not sure which supplements to take? We’re here to help.",
+    bgImage: "/get-started-page-img/get-sterted-banner.jpg",
+    bgImageMobile: "/get-started-page-img/get-started-banner-mobile.webp",
+  },
+];
+export const BundlesBannerArray = [
+  {
+    id: 1,
+    subHeading: "Bundle And Save 20%",
+    heading: "Value Packs",
+    paragraph:
+      "Nature Made® value packs bundle products into one convenient shipment at a discount.†",
+    bgImage: BundlesBanner,
+    bgImageMobile: "/get-started-page-img/get-started-banner-mobile.webp",
+  },
+];
+export const HowToGetStartedArray = [
+  {
+    id: 1,
+    subHeading:
+      "Browse some common health needs to see which ones may apply to you.",
+    heading: "Quick Start Recommendations",
+    buttonText: "Get Started",
+    logos: "/get-started-page-img/bottolTablet01.webp",
+  },
+  {
+    id: 2,
+    subHeading: "Learn more about dietary supplements and their benefits.",
+    heading: "Vitamins 101",
+    buttonText: "Explore More",
+    logos: "/get-started-page-img/ShapeFlag01.webp",
+  },
+  {
+    id: 3,
+    subHeading:
+      "Take the guesswork out of wellness with a regimen chosen by our experts.",
+    heading: "Your Daily 4",
+    buttonText: "start today",
+    logos: "/get-started-page-img/callenderLogo01.svg",
+  },
+];
+export const Vitamins101Array = [
+  {
+    id: 1,
+    heading: "Why should I take vitamins?",
+    paragrap:
+      "We get it, life gets busy. We might not always stop to think about our wellness. How can we ensure we’re getting enough of the essential nutrients we need from our food? What if sometimes our wellbeing needs a little extra support? Supplementing with vitamins, minerals and other nutrients can help support your nutritional needs so that you can focus on everything else.†",
+    buttonTextLess: "SHOW LESS",
+    buttonTextMore: "SHOW MORE",
+    logos: General,
+    // logos: "/bybenefitIocn/general.svg",
+  },
+  {
+    id: 2,
+    heading: "How do vitamins & supplements support my wellness?",
+    paragrap:
+      "Many vitamins and minerals are considered essential, meaning you need to consume them (from food) every day. Why? Every system in your body, from your immune system and nervous system to your heart, muscles, and bones, relies on essential nutrients to function properly. Yet many adults are not getting the recommended amounts of these essential nutrients from food alone.[1] This is where dietary supplements come in. They help provide these nutrients (like Vitamins C and D, B Vitamins, Magnesium, and Zinc) so that you can help close nutrient gaps that may exist in your diet.†",
+    buttonTextLess: "SHOW LESS",
+    buttonTextMore: "SHOW MORE",
+    logos: CapsuleIicon01,
+    // logos: "/get-started-page-img/capsule-icon-1.webp",
+  },
+  {
+    id: 3,
+    heading: "Where do I begin?",
+    paragrap:
+      "While many of us might benefit from dietary supplements, we all have different needs and at different times. Nature Made®️ has you covered with vitamins and supplements for everyone at every life stage. Whether it's multivitamins for daily nutritional support, nutrients that support your bone, muscle, heart and immune health, or ingredients that support your mood, stress and occasional sleep needs. And you can choose between tablets, softgels, capsules, tasty chewables and delicious gummies. No matter your choice, it's easy to switch up your routine as your needs change.†",
+    buttonTextLess: "SHOW LESS",
+    buttonTextMore: "SHOW MORE",
+    logos: GroupPage,
+    // logos: "/get-started-page-img/GroupPage.webp",
+  },
+];
+export const GetStartedQuestionArray = [
+  {
+    id: 1,
+    heading: "What vitamins and supplements should I take?",
+    article:
+      "The best way to support your daily nutrition is to eat a well-balanced diet that consists of fruit, vegetables, whole grains, healthy fats and lean meats. This is your go-to for the vitamins, minerals and nutrients your body needs every day. However, we know that in today’s busy world, that’s not always possible. Dietary supplements, such as multivitamins, are designed to help support your daily nutrition and provide the nutrients your body needs to function at its best. You should first consult with your healthcare provider before adding any dietary supplement to your routine.†",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
+  },
+  {
+    id: 2,
+    heading:
+      "Are Nature Made Gummies gluten free? Do they use artificial colors and/or flavors? What about their sugar content?",
+    article:
+      "Most Nature Made Adult Gummies are gluten free and only use natural flavors and colors derived from natural sources (no synthetic dyes). Our gummies contain approximately 1–3 grams of sugar and 5–15 calories per gummy. When consumed as part of a healthy diet, this amount should not be a concern. Please refer to the label for your product's calorie and sugar content. If you are sensitive to sugar, please check with a healthcare professional about incorporating gummies into your daily plan.",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
+  },
+  {
+    id: 3,
+    heading: "What do multivitamins help with?",
+    article:
+      "Multivitamins help fill potential nutrient gaps from your diet by providing daily nutritional support.†",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
+  },
+  {
+    id: 4,
+    heading: "How do I know if I need to supplement with vitamin D?",
+    article:
+      "Your personal healthcare professional can order a simple blood test to check your vitamin D levels. You may be at risk if you: • Experience less than 15-30 minutes of full body exposure sunlight between 10 a.m. and 3 p.m. • Wear sunscreen. • Have a darker hue of skin color. • Are over 65 years of age. • Spend most of your time indoors. • Live in a region with a long winter season. • Are overweight or obese.",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
+  },
+  {
+    id: 5,
+    heading: "What does fish oil do for the body?",
+    article:
+      "Fish Oil contains the Omega-3 Fatty Acids Eicosapentaenoic Acid (EPA) and Docosahexaenoic Acid (DHA) that help support heart health, brain health and eye health. However, the body does not make EPA and DHA on its own, so it is best to get these nutrients from food sources.[2] Since not everyone regularly consumes fatty fish, an Omega-3†† from fish oil supplement can provide the body with Omega-3s.[1]†",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
+  },
+  {
+    id: 6,
+    heading: "Should I take a magnesium supplement?",
+    article:
+      "If your diet is lacking in magnesium-rich foods, a magnesium supplement may be a good choice to ensure your magnesium needs are met. Some people need magnesium supplements due to certain medications or health conditions. Talk to your healthcare professional to determine if a magnesium supplement fits into your supplement regimen.",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
+  },
+  {
+    id: 7,
+    heading: "Why should I start a subscription?",
+    article:
+      "It's Easy & Flexible Set it and forget it. You can change, pause, and cancel anytime. Membership Exclusive Get 10% discount on every order plus free shipping**. Learn More **When you purchase one or more products on subscription, you will automatically get free shipping on this and all future deliveries. Offer excludes tax and is subject to change. Orders outside of the contiguous US, including Alaska & Hawaii will be charged $8 for shipping.",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
+  },
+];
+export const CardForGetStartedPageArray = [
+  {
+    id: 1,
+    favorites: "",
+    baseName: "Energy",
+    nameSubtruc: "",
+    productTitle: "",
+    cetagory: "collections",
+    review: "",
+    reviewPerson: "",
+    isNew: "",
+    onlineAvilable: "Online Avilable",
+    discount: "30%",
+    bestSeller: "Best Seller",
+    image: "/image/energy-max.webp",
+    productType: "",
+    productIconGen: General,
+    productIconVit: MensHelth,
+    doseType: "3-in-1 Blend",
+    doseIcon: "",
+    price: "",
+    buyBtn: "Shop now",
+  },
+  {
+    id: 2,
+    favorites: "",
+    baseName: "Energy",
+    nameSubtruc: "",
+    productTitle: "",
+    cetagory: "collections",
+    review: "",
+    reviewPerson: "",
+    isNew: "",
+    onlineAvilable: "Online Avilable",
+    discount: "30%",
+    bestSeller: "Best Seller",
+    image: "/image/energy-max.webp",
+    productType: "",
+    productIconGen: General,
+    productIconVit: MensHelth,
+    doseType: "3-in-1 Blend",
+    doseIcon: "",
+    price: "",
+    buyBtn: "Shop now",
+  },
+  {
+    id: 3,
+    favorites: "",
+    baseName: "Energy",
+    nameSubtruc: "",
+    productTitle: "",
+    cetagory: "collections",
+    review: "",
+    reviewPerson: "",
+    isNew: "",
+    onlineAvilable: "Online Avilable",
+    discount: "30%",
+    bestSeller: "Best Seller",
+    image: "/image/energy-max.webp",
+    productType: "",
+    productIconGen: General,
+    productIconVit: MensHelth,
+    doseType: "3-in-1 Blend",
+    doseIcon: "",
+    price: "",
+    buyBtn: "Shop now",
+    mensMultivitamins: "multivitamins",
+  },
+
+  {
+    id: 4,
+    favorites: <IoIosHeartEmpty />,
+    nameBase: "Energy",
+    nameSubtruc: "MAX™",
+    productTitle: "WELLBLENDS™",
+    cetagory: "You may also like",
+    review: "★★★★☆",
+    reviewPerson: 59,
+    isNew: "new",
+    onlineAvilable: "Online Avilable",
+    discount: "30%",
+    bestSeller: "Best Seller",
+    image: "/image/energy-max.webp",
+    productType: "gummies",
+    productIconGen: General,
+    productIconVit: MensHelth,
+    doseType: "3-in-1 Blend",
+    doseIcon: <IoBatteryDeadOutline />,
+    price: "99",
+    buyBtn: "buy now",
+  },
+
+  {
+    id: 5,
+    favorites: <IoIosHeartEmpty />,
+    nameBase: "Energy",
+    nameSubtruc: "MAX™",
+    productTitle: "WELLBLENDS™",
+    cetagory: "You may also like",
+    review: "★★★★☆",
+    reviewPerson: 59,
+    isNew: "new",
+    onlineAvilable: "Online Avilable",
+    discount: "30%",
+    bestSeller: "Best Seller",
+    image: "/image/energy-max.webp",
+    productType: "gummies",
+    productIcon: <CgProductHunt />,
+    doseType: "3-in-1 Blend",
+    doseIcon: <IoBatteryDeadOutline />,
+    price: "99",
+    buyBtn: "buy now",
+  },
+  {
+    id: 6,
+    favorites: <IoIosHeartEmpty />,
+    nameBase: "Energy",
+    nameSubtruc: "MAX™",
+    productTitle: "WELLBLENDS™",
+    cetagory: "You may also like",
+    review: "★★★★☆",
+    reviewPerson: 59,
+    isNew: "new",
+    onlineAvilable: "Online Avilable",
+    discount: "30%",
+    bestSeller: "Best Seller",
+    image: "/image/energy-max.webp",
+    productType: "gummies",
+    productIcon: <CgProductHunt />,
+    doseType: "3-in-1 Blend",
+    doseIcon: <IoBatteryDeadOutline />,
+    price: "99",
+    buyBtn: "buy now",
+  },
+  {
+    id: 7,
+    favorites: <IoIosHeartEmpty />,
+    nameBase: "Energy",
+    nameSubtruc: "MAX™",
+    productTitle: "WELLBLENDS™",
+    cetagory: "You may also like",
+    review: "★★★★☆",
+    reviewPerson: 59,
+    isNew: "new",
+    onlineAvilable: "Online Avilable",
+    discount: "30%",
+    bestSeller: "Best Seller",
+    image: "/image/energy-max.webp",
+    productType: "gummies",
+    productIcon: <CgProductHunt />,
+    doseType: "3-in-1 Blend",
+    doseIcon: <IoBatteryDeadOutline />,
+    price: "99",
+    buyBtn: "buy now",
+  },
+  {
+    id: 8,
+    favorites: "",
+    baseName: "Energy",
+    nameSubtruc: "",
+    productTitle: "",
+    cetagory: "collections",
+    review: "",
+    reviewPerson: "",
+    isNew: "",
+    onlineAvilable: "Online Avilable",
+    discount: "30%",
+    bestSeller: "Best Seller",
+    image: "/image/energy-max.webp",
+    productType: "",
+    productIconGen: General,
+    productIconVit: MensHelth,
+    doseType: "3-in-1 Blend",
+    doseIcon: "",
+    price: "",
+    buyBtn: "Shop now",
+  },
+];
+export const GetStartedExploreArray = [
+  {
+    id: 1,
+    heading: "What Vitamins Should I Take?",
+    article:
+      "If you’re asking, what vitamins should I take daily? Don’t worry, Nature Made® is here to help! There are 13 essential vitamins that your body needs every day to function at its best: vitamins A, C, D, E, K and the eight B vitamins (including Folic Acid, Biotin, B6 and B12). What does a vitamin do? Along with other essential nutrients, vitamins play an important role in many bodily functions. Vitamins need to be consumed from food; however, it can be difficult to consume enough from your diet alone. That’s where supplements come in—they can help support your daily nutritional needs.†",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
+  },
+  {
+    id: 2,
+    heading: "What Supplements Should I Take?",
+    article:
+      "There is more to daily nutrition than just vitamins. There are many different minerals and nutrients that also help support your health and wellbeing. Essential minerals, such as Magnesium, Calcium and Iron, are needed by your body for a variety of functions. Nutrients like Choline and CoQ10 are important for your brain health and heart health, respectively. You can search here on our website by benefit to find the nutrients to help support your specific needs.†",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
+  },
+  {
+    id: 3,
+    heading: "Nature Made Vitamins and Supplements",
+    article:
+      "Nature Made® has been a lead innovator of science-backed wellness solutions for over fifty years. That’s what makes us the #1 Pharmacist Recommended Vitamin and Supplement Brand.* As always, be sure to first check with your healthcare provider before adding any new vitamin or supplement to your daily routine.",
+    upArrow: <IoIosArrowUp />,
+    downArrow: <IoIosArrowDown />,
   },
 ];

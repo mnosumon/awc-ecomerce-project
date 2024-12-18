@@ -10,6 +10,7 @@ import SearchCard from "@/components/utilities/SearchCard";
 import YourCart from "./yourCart/YourCart";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import NavForMobile from "../navbar/NavForMobile";
+import Logo from "../../../../public/image/nm-logo-header.avif";
 
 const Header = () => {
   const [searchCardShow, setSearchCardShow] = useState(false);
@@ -69,7 +70,7 @@ const Header = () => {
           <div className="flex gap-[190px] lg:gap-[200px] xl:gap-[300px] 2xl:gap-[500px] items-center">
             <Link href="#" className="overflow-hidden">
               <Image
-                src="/image/nm-logo-header.avif"
+                src={Logo}
                 alt="Logo"
                 width={150}
                 height={100}
